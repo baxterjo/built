@@ -39,7 +39,10 @@
 //!
 //! ## Why?
 //! The short answer is that `cargo` has no way of knowing if the source of one of those variables
-//! has changed. The long answer can be found in [The Cargo Book](<https://doc.rust-lang.org/cargo/reference/build-scripts.html#change-detection>)
+//! has changed and will always optimize for build times by assuming the crate **DOES NOT** need to
+//! be rebuilt.
+//!
+//! The long answer can be found in [The Cargo Book](<https://doc.rust-lang.org/cargo/reference/build-scripts.html#change-detection>)
 //!
 //! ## How to make cargo rebuild this crate every time?
 //! In your `build.rs`
