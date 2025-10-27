@@ -1,0 +1,16 @@
+[package]
+name = "built-at-build"
+version = "0.8.0"
+edition = "2021"
+description = "Access variables available from built from your build scripts."
+
+[build-dependencies]
+built = ">=0.8.0"
+
+[features]
+
+cargo-lock = ["built/cargo-lock"]
+chrono = ["built/chrono"]
+dependency-tree = ["built/dependency-tree"]
+git2 = ["built/git2"]
+semver = ["built/semver"]
